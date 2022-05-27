@@ -1,0 +1,25 @@
+<%- include('./components/header.ejs') %>
+
+
+
+    <form method="POST" action="/feed/edit/<%=result._id%>">
+        <h5>Edit Post</h5>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">name</label>
+            <input type="text" name="name" placeholder="name" class="title" value="<%=result.name%>" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Message</label>
+            <input type="text" name="message" class="article" value="<%=result.message%>" id="exampleInputPassword1" placeholder="message">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
+
+
+
+
+    <%- include('./components/footer.ejs') %> 
